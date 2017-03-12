@@ -1,5 +1,4 @@
 PREDICATES
-anak(STRING,STRING).
 istri(STRING,STRING).
 pria(STRING).
 wanita(STRING).
@@ -30,4 +29,4 @@ kakek(A,B):-anak(B,C),anak(C,A).
 cucu(A,B):-anak(A,C),anak(C,B).
 adik(A,B):-usia(A,10),usia(B,13).
 GOAL
-ibu("mary",Siapa).
+cucu("Cucu",Siapa);ibu("Ibu",Siapa);adik("Adik",Siapa);kakek("Kakek",Siapa).

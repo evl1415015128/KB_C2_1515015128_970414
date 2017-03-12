@@ -29,4 +29,4 @@ kakek(A,B):-anak(B,C),anak(C,A).
 cucu(A,B):-anak(A,C),anak(C,B).
 adik(A,B):-usia(A,10),usia(B,13).
 GOAL
-ibu("mary",Siapa).
+cucu(_,Siapa);ibu(_,Siapa);adik(_,Siapa);kakek(_,Siapa).
