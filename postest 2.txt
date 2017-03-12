@@ -1,0 +1,52 @@
+KEYWORD PROLOG
+STRUKTUR PROGRAM PROLOG
+Program Prolog terdiri dari :
+
+Domains
+Domains menyatakan jenis suatu variabel.
+Domains seperti tipe data dalam bahasa prosedural (Pascal,C)
+Beberapa domains standar  dalam prolog: char, integer, real, string, symbol.
+contoh:
+namaBunga = symbol
+mataKuliah = string
+nilai = integer
+Domains char dipakai pada predikat yang argumennya memiliki nilai berupa karakter tunggal,  yaitu abjad,  angka,  pungtuasi (?.!,<,...), dan operasi (+,-,...). Penulisan argumen bertipe char dalam prolog diapit tanda ’...’.
+contoh: nilai (dita, ’A’).
+Domains string dipakai pada predikat yang argumennya memiliki nilai berupa karakter jamak yang dapat berupa kata maupun suatu tulisan (kumpulan kata-kata termasuk di dalamnya pungtuasi dan tanda operasi yang dapat dipisahkan spasi). Penulisan argumen bertipe string dalam prolog diapit tanda ”...”.
+contoh: hobi(rina,”Memasak”).
+Domains integer dipakai pada predikat yang argumennya memiliki nilai berupa bilangan bulat.
+Contoh: nilai(tini,”Kalkulus”,75).
+Domains real dipakai pada predikat yang argumennya memiliki nilai berupa bilangan pecahan. Penulisan argumen bertipe real dalam prolog untuk nilai pecahan ditulis di belakang tanda titik (.).
+contoh: nilai(ivan, 8.75).
+Domains symbol dipakai pada predikat yang argumennya memiliki nilai berupa kumpulan karakter yang hanya terdiri dari huruf atau kata tanpa dipisahkan oleh spasi. Suatu kata  dapat disambungkan dengan kata lain dengan  tanda _ (underscore).
+contoh: lelaki(toni_setiawan).
+
+Predicates
+Predicates digunakan untuk mendeklarasikan predikat.
+Penulisan dalam Prolog :
+Diawali dengan huruf kecil.
+Contoh:
+saudara(x,y)
+suka(nama,hobi)
+manis(x)
+
+Clauses
+Clauses digunakan untuk mendefinisikan predikat.
+Clauses terdiri dari fakta dan aturan:
+1.  Fakta
+Fakta merupakan suatu kenyataan atau kebenaran yang diketahui.
+Fakta menyatakan hubungan/relasi antara dua obyek atau lebih atau menunjukkan sifat suatu obyek.
+Penulisan dalam Prolog :
+Diawali dengan huruf kecil dan diakhiri dengan tanda titik.
+Contoh :
+saudara(tina,tini).
+suka(lia,menyanyi).
+manis(gula).
+2.  Aturan
+Aturan penulisan :
+If ditulis sebagai  ‘titik dua + strep’ (:-)
+And ditulis sebagai  ‘koma’ (,)
+Or ditulis sebagai ‘titik koma (;)
+d.  Goal
+Goal adalah tempat pernyataan (query) diberikan atau meminta prolog untuk
+mencapai tujuan yang dikehendaki.
